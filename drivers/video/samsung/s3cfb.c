@@ -48,8 +48,7 @@
 #include <mach/regs-clock.h>
 #include <asm/mach-types.h>
 #if defined(CONFIG_MACH_WAVE)
-#include "s8500-logo.h"
-#include "s8530-logo.h"
+#include "boot-logo.h"
 #endif
 #ifdef CONFIG_FB_S3C_MDNIE
 #include "s3cfb_mdnie.h"
@@ -129,9 +128,9 @@ static int __init s3cfb_draw_logo(struct fb_info *fb)
 		memcpy(fb->screen_base, LOGO_RGB24, fb->var.yres * fb->fix.line_length);
 #elif defined(CONFIG_MACH_WAVE)
 	if(machine_is_wave2())
-		memcpy(fb->screen_base, S8530_LOGO_RGB24, fb->var.yres * fb->fix.line_length);
+		memcpy(fb->screen_base, BOOT_LOGO_RGB24, fb->var.yres * fb->fix.line_length);
 	else
-		memcpy(fb->screen_base, S8500_LOGO_RGB24, fb->var.yres * fb->fix.line_length);
+		memcpy(fb->screen_base, BOOT_LOGO_RGB24, fb->var.yres * fb->fix.line_length);
 #endif
 	return 0;
 }
