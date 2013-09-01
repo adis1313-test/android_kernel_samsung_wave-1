@@ -15,7 +15,7 @@
 #include <linux/cpufreq.h>
 
 enum perf_level {
-	OC0, OC1, L0, L1, L2, L3, L4, MAX_PERF_LEVEL = L4,
+	OC1, L0, L1, L2, L3, MAX_PERF_LEVEL = L3,
 };
 
 /* For cpu-freq driver */
