@@ -599,10 +599,10 @@ static int __init s5pv210_cpu_init(struct cpufreq_policy *policy)
 		g_dvfslockval[i] = MAX_PERF_LEVEL;
 #endif
 
-	/* Set max freq to 1GHz on startup */
+	/* Set max freq to 1320MHz on startup */
 	ret = cpufreq_frequency_table_cpuinfo(policy, s5pv210_freq_table);
 	policy->min = 200000;
-	policy->max = 1000000;
+	policy->max = 1320000;
 
 	return ret;
 }
