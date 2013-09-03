@@ -401,27 +401,27 @@ static struct s5p_media_device wave_media_devs[] = {
 static struct s5pv210_cpufreq_voltage smdkc110_cpufreq_volt[] = {
 	{
 		.freq	= 1320000,
-		.varm	= 1275000,
+		.varm	= 1200000,
 		.vint	= 1100000,
 	}, {
 		.freq	= 1200000,
-		.varm	= 1250000,
+		.varm	= 1175000,
 		.vint	= 1100000,
 	}, {
 		.freq	= 1000000,
-		.varm	= 1225000,
-		.vint	= 1100000,
-	}, {
-		.freq	=  800000,
 		.varm	= 1150000,
 		.vint	= 1100000,
 	}, {
+		.freq	=  800000,
+		.varm	= 1125000,
+		.vint	= 1100000,
+	}, {
 		.freq	=  400000,
-		.varm	=  950000,
+		.varm	=  925000,
 		.vint	= 1100000,
 	}, {
 		.freq	=  200000,
-		.varm	=  900000,
+		.varm	=  875000,
 		.vint	= 1100000,
 	},
 };
